@@ -25,7 +25,17 @@
 					border-left: 1px white solid;
 				}
 			}
-
+			
+			/* Tablet and down */
+			@media (max-width: 979px) {
+				.navbar-fixed-top, .navbar-fixed-bottom {
+					position:fixed;
+				}
+				.main {
+					margin-top:51px;
+				}
+			}
+			
 			/* Landscape phones and down */
 			@media (max-width: 480px) {
 				.copy {
@@ -44,6 +54,9 @@
 			/* Main body and headings */
 			body {
 				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+			}
+			.navbar-inverse .navbar-inner {
+				opacity:.9;
 			}
 			.heading, .subheading {
 				font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -80,12 +93,11 @@
 
 			/* Marketing Copy and Footer */
 			.copy {
-				padding-top: 2.5%;
 				padding-bottom: 2.5%;
 				text-align: justify;
 			}
 			.asset {
-				padding: 2.5% 0%;
+				padding-bottom: 2.5%;
 			}
 			.footer {
 				color: #cccccc;
@@ -133,7 +145,7 @@
 		<!-- We use row-fluid inside containers to achieve a resizable layout. -->
 		<!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
 		<!-- http://stackoverflow.com/a/12270322 -->
-		<div class="container-fluid">
+		<div class="main container-fluid">
 			<!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
 			<!-- www.google.com/fonts/specimen/Ubuntu -->
 			<!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
@@ -215,19 +227,40 @@
 				</div>
 			</div>
 			<div class="row-fluid pitch">
-				<div class="span5 offset1 video">
-					<img class="img-polaroid" src="http://us.123rf.com/400wm/400/400/cmcderm1/cmcderm10710/cmcderm1071000012/1962345-ideas-charts-innovation-on-a-cocktail-napkin-in-a-bar-with-wine-and-snacks.jpg">
+				<div class="span5 video">
+					<img class="img-polaroid" src="http://cdn.baekdal.com/2008/napkin2.jpg">
 				</div>
-				<div class="span5 copy">
+				<div class="span7 copy">
+					<h2>Anyone Can Be an Entrepeneur</h2>
 					<p>
-						nSeption&reg; tracks your ideas, mockups, prototyping, software development lifecycle, product design and marketing,
-						and business formation and planning to selling your product. nSeption&reg; helps you to stay organized and on
-						track to turning your ideas into money-making realities.  nSeption&reg; also gives you the information you need in each phase
+						From a quote on Quora...
+					</p>
+<pre>
+   	An idea is not a mockup
+	A mockup is not a prototype 
+	A prototype is not a program 
+	A program is not a product 
+	A product is not a business 
+	And a business is not profits
+</pre>	
+					<p>
+						...nSeption was conceived.
+					</p>
+					<p>
+						Many are looking to take their idea from being sketches on a napkin, to being a money maker.  The problem is that
+						how to get there can seem overwhelming as many, including myself, are not sure how to get there.  
+					</p>
+					<p>
+						nSeption tracks your ideas, mockups, prototyping, program development lifecycle, product design and marketing,
+						and business formation and planning to selling your product. nSeption helps you to stay organized and on
+						track to turning your ideas into money-making realities.  nSeption also gives you the information you need in each phase
 						of the process to stay on track.
 					</p>
 					<p>
-						nSeption&reg; allows you to collaborate amongst team member across multiple devices, generate market and progress reports,
-						and interactively prototype.  
+						nSeption is for those taking and idea to making a profit for the first time or for those who need a tool to help
+						track and monitor the progress of each idea.  Whether you're on your desktop, tablet or smartphone, you will always 
+						by in sync with the progress of your ideas.  Does an idea come to you and you need to write it down?  Use any of your devices 
+						to type or draw your idea to your backlog of ideas your are tracking.
 					</p>
 				</div>
 
@@ -238,30 +271,34 @@
 			<!-- http://twitter.github.io/bootstrap/base-css.html#images -->
 			<!-- http://placehold.it -->
 			<div class="row-fluid section1">
-				<div class="span5 offset1 asset">
-					<img class="img-polaroid" src="http://www.appcooker.com/wp-content/uploads/2012/07/Features-Overview_iPhone-And-iPad-Mockups-Wireframes-Or-Prototypes2.png">
-				</div>
-
-			</div>
-
-			<div class="row-fluid section2">
-				<div class="span5 offset1 copy copy-right">
+				<div class="span7 copy">
+					<h2>Prototyping</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-						porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-						mollis justo velit at nunc. Fusce nec egestas sem. Donec
-						fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-						volutpat lorem ut congue malesuada. In facilisis scelerisque
-						turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-						quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-						risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-						consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-						rutrum, nunc leo tempus nisl, eu mollis justo velit at
-						nunc. Fusce nec egestas sem. Donec fringilla.
+						Prototyping is easy with nSeption.  Whether you want to use the built in tooling to create your
+						wireframes or you prefer to draw them with your touch device.  Your prototypes are linked to your ideas
+						along with suggest timelines to have your designs comleted by.  Not every idea will make profits so
+						you can choose how active you will progressing an idea to adjust your timelines to help you 
+						get to market quickly.  A good rule of thumb is that if you can't develop the program based on 
+						your idea within two weeks, then the idea is too complex.
 					</p>
 				</div>
 				<div class="span5 asset">
-					<img class="img-polaroid" src="http://placehold.it/480x300">
+					<img class="img-polaroid" src="http://ozzieinboston.typepad.com/.a/6a00e551e31bfb883400e553d52b218833-500wi">
+				</div>
+			</div>
+
+			<div class="row-fluid section2">
+				<div class="span5 asset">
+					<img class="img-polaroid" src="http://cce.clark.edu/sites/default/files/business-plan-writer.jpg">
+				</div>
+				<div class="span7 copy copy-right">
+					<h2>How Do I Setup My Business?</h2>
+					<p>
+						Setting up a business to sell your product can be an undertaking in itself.  nSeption will guide
+						you through the process to being a limited liability, S-Corporation or fully incorporated.  With links
+						to many resources you will be able to find the information you need quickly and will track your progress
+						to getting your business setup quickly.
+					</p>
 				</div>
 			</div>
 
@@ -275,22 +312,29 @@
 						<div class="accordion-group">
 							<div class="accordion-heading">
 								<a class="accordion-toggle" data-toggle="collapse"
-								data-parent="#accordion2" href="#collapseOne"> What does FAQ stand for? </a>
+								data-parent="#accordion2" href="#collapseOne"> What will you use the money donated towards? </a>
 							</div>
 							<div id="collapseOne" class="accordion-body collapse">
 								<div class="accordion-inner">
-									Frequently Asked Question.
+									<ul>
+										<li>Salaries and benefits for three other developers, myself and business partner.</li>
+										<li>Business startup costs</li>
+										<li>Marketing</li>
+										<li>Hardware</li>
+										<li>Lawyer fees</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="accordion-group">
 							<div class="accordion-heading">
 								<a class="accordion-toggle" data-toggle="collapse"
-								data-parent="#accordion2" href="#collapseTwo"> What's a Frequently Asked Question? </a>
+								data-parent="#accordion2" href="#collapseTwo"> How long will it take to develop nSeption? </a>
 							</div>
 							<div id="collapseTwo" class="accordion-body collapse">
 								<div class="accordion-inner">
-									A question which is commonly asked by users.
+									Our goal will be to develop a responsive version of nSeption within 6 months.  The next 6 months will
+									be devoted to marketing, defect fixes and iOS implementations.
 								</div>
 							</div>
 						</div>
