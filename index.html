@@ -31,6 +31,10 @@
 				.navbar-fixed-top, .navbar-fixed-bottom {
 					position:fixed;
 				}
+				.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+					margin-left:0;
+					margin-right:0;
+				}
 				.main {
 					margin-top:51px;
 				}
@@ -39,7 +43,7 @@
 			/* Landscape phones and down */
 			@media (max-width: 480px) {
 				.copy {
-					padding: 2.5% 10%;
+					padding: 2.5% 0%;
 				}
 				.linediv-l {
 					border-bottom: 1px white solid;
@@ -62,13 +66,19 @@
 				font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 				text-align: center;
 			}
+			h2 {
+				margin-top:0;
+			}
+			.img-polaroid {
+				box-sizing:border-box;
+			}
 			p.lead {
 				padding-top: 1.5%;
 				font-size: 24px;
 				line-height: 30px;
 			}
 			p {
-				font-size: 18px;
+				font-size: 15px;
 				line-height: 24px;
 			}
 
@@ -236,12 +246,12 @@
 						From a quote on Quora...
 					</p>
 <pre>
-   	An idea is not a mockup
-	A mockup is not a prototype 
-	A prototype is not a program 
-	A program is not a product 
-	A product is not a business 
-	And a business is not profits
+An idea is not a mockup
+A mockup is not a prototype 
+A prototype is not a program 
+A program is not a product 
+A product is not a business 
+And a business is not profits
 </pre>	
 					<p>
 						...nSeption was conceived.
@@ -274,12 +284,10 @@
 				<div class="span7 copy">
 					<h2>Prototyping</h2>
 					<p>
-						Prototyping is easy with nSeption.  Whether you want to use the built in tooling to create your
-						wireframes or you prefer to draw them with your touch device.  Your prototypes are linked to your ideas
-						along with suggest timelines to have your designs comleted by.  Not every idea will make profits so
-						you can choose how active you will progressing an idea to adjust your timelines to help you 
-						get to market quickly.  A good rule of thumb is that if you can't develop the program based on 
-						your idea within two weeks, then the idea is too complex.
+						Prototyping is easy with nSeption.  Whether you want to use the built-in tooling to create your
+						wireframes, import from your favorite wireframing tool, or you prefer to draw them with your touch device.  
+						Your prototypes are linked to your ideas along with suggest timelines. Not every idea will make profits.  
+						A good rule of thumb is that if you can't develop the program based on your idea within two weeks, then the idea is too complex.
 					</p>
 				</div>
 				<div class="span5 asset">
@@ -296,7 +304,7 @@
 					<p>
 						Setting up a business to sell your product can be an undertaking in itself.  nSeption will guide
 						you through the process to being a limited liability, S-Corporation or fully incorporated.  With links
-						to many resources you will be able to find the information you need quickly and will track your progress
+						to many resources you will be able to find the information you need and will track your progress
 						to getting your business setup quickly.
 					</p>
 				</div>
